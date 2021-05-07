@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prototype">
         <activity android:name=".Dashboard"></activity>
-        <activity android:name=".Menu" />
+        <activity android:name=".Login" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

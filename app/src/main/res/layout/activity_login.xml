@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#121212"
-    tools:context=".Menu">
+    tools:context=".Login">
 
 
     <ImageView
@@ -398,12 +398,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <ImageView
-        android:id="@+id/imageView49"
+        android:id="@+id/guestButton"
         android:layout_width="96dp"
         android:layout_height="112dp"
         android:layout_marginStart="315dp"
         android:layout_marginLeft="315dp"
         android:layout_marginTop="124dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -423,7 +424,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView49" />
+        app:layout_constraintTop_toBottomOf="@+id/guestButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
