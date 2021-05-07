@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Prototype">
-        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".Screen_Trip"></activity>
+        <activity android:name=".Screen_Ticket" />
+        <activity android:name=".Screen_Receipt" />
+        <activity android:name=".Screen_Payment" />
+        <activity android:name=".Dashboard" />
         <activity android:name=".Login" />
         <activity android:name=".SplashScreen">
             <intent-filter>

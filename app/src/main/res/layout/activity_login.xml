@@ -10,6 +10,7 @@
 
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView10"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -18,9 +19,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView32"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -28,9 +30,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView20"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -41,9 +44,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView34"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -53,9 +57,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView20"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView21"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -66,9 +71,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView35"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -78,9 +84,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView21"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView22"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -91,9 +98,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView36"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -103,9 +111,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView22"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView23"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -116,9 +125,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView37"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -128,9 +138,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView23"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView24"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -141,9 +152,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView38"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -153,9 +165,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView24"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView25"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -166,9 +179,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView39"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -178,9 +192,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView25"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView26"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -191,9 +206,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView40"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -203,9 +219,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView26"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView27"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -216,9 +233,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView41"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -228,9 +246,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView27"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView28"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -241,9 +260,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView42"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -253,9 +273,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView28"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView29"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -266,9 +287,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView47"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -278,9 +300,10 @@
         android:rotation="90"
         app:layout_constraintStart_toEndOf="@+id/imageView43"
         app:layout_constraintTop_toBottomOf="@+id/imageView30"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView43"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -290,9 +313,10 @@
         android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView29"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView30"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -303,9 +327,10 @@
         android:rotation="90"
         app:layout_constraintStart_toEndOf="@+id/imageView29"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView45"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -316,9 +341,10 @@
         android:rotation="90"
         app:layout_constraintStart_toEndOf="@+id/imageView29"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView46"
         android:layout_width="24dp"
         android:layout_height="109dp"
@@ -329,9 +355,10 @@
         android:rotation="90"
         app:layout_constraintStart_toEndOf="@+id/imageView29"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/roado" />
+        app:srcCompat="@drawable/road" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView9"
         android:layout_width="80dp"
         android:layout_height="36dp"
@@ -341,9 +368,10 @@
         android:adjustViewBounds="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pitx2" />
+        app:srcCompat="@drawable/logo_2" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -355,6 +383,7 @@
         app:srcCompat="@drawable/bar" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -374,7 +403,7 @@
         android:layout_marginTop="164dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:text="Sign In"
+        android:text="@string/button1"
         app:backgroundTint="#BA0101"
         app:layout_constraintEnd_toStartOf="@+id/imageView26"
         app:layout_constraintHorizontal_bias="0.666"
@@ -390,7 +419,7 @@
         android:layout_marginTop="256dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:text="Register"
+        android:text="@string/button2"
         app:backgroundTint="#BA0101"
         app:layout_constraintEnd_toStartOf="@+id/imageView26"
         app:layout_constraintHorizontal_bias="0.564"
@@ -405,11 +434,13 @@
         android:layout_marginLeft="315dp"
         android:layout_marginTop="124dp"
         android:clickable="true"
+        android:contentDescription="@string/desc"
+        android:focusableInTouchMode="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView42"
-        app:srcCompat="@drawable/busticketo" />
+        app:srcCompat="@drawable/bus_ticket" />
 
     <TextView
         android:id="@+id/textView3"
@@ -420,7 +451,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Guest Log-in"
+        android:text="@string/button3"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

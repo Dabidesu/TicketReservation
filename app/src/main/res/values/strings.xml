@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Prototype</string>
+    <string name="desc">desc</string>
+
+    <string name="dash_msg1">Welcome, User!</string>
+    <string name="dash_msg2">Book your trip now!</string>
+    <string name="dash_msg3">Book Trip</string>
+    <string name="dash_msg4">Show Ticket</string>
+    <string name="dash_msg5">View Trip</string>
+    <string name="dash_msg6">Check Route</string>
+    <string name="dash_msg7">Edit Trip (WIP)</string>
+    <string name="dash_msg8">Log-out</string>
+
+    <string name="button1">Sign In</string>
+    <string name="button2">Register</string>
+    <string name="button3">Guest Log-in</string>
+
+    <string name="msg1">Welcome</string>
+    <string name="msg2">bitch</string>
 </resources>
