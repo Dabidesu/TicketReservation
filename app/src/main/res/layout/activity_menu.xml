@@ -1,9 +1,429 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#121212"
     tools:context=".Menu">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginLeft="216dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginLeft="252dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginLeft="252dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginLeft="288dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginLeft="324dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginLeft="324dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toEndOf="@+id/imageView43"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginLeft="360dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="24dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="132dp"
+        android:adjustViewBounds="true"
+        android:rotation="90"
+        app:layout_constraintStart_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/roado" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pitx2" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bar" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Sign In"
+        app:backgroundTint="#BA0101"
+        app:layout_constraintEnd_toStartOf="@+id/imageView26"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Register"
+        app:backgroundTint="#BA0101"
+        app:layout_constraintEnd_toStartOf="@+id/imageView26"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="96dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42"
+        app:srcCompat="@drawable/busticketo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="317dp"
+        android:layout_marginLeft="317dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Guest Log-in"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView49" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
