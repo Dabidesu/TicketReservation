@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Login extends AppCompatActivity {
+public class LoginScreen extends AppCompatActivity {
 
     ImageView guestButton;
 
@@ -20,7 +20,7 @@ public class Login extends AppCompatActivity {
         guestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Dashboard.class);
+                Intent intent = new Intent(LoginScreen.this, Dashboard.class);
                 startActivity(intent);
             }
         });
