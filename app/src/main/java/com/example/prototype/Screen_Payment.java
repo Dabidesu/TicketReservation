@@ -26,6 +26,7 @@ public class Screen_Payment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_payment);
+
         checkTrip();
 
         dest = findViewById(R.id.spinner1);
