@@ -1,20 +1,17 @@
 package com.example.prototype;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Screen_Payment extends AppCompatActivity {
@@ -46,13 +43,13 @@ public class Screen_Payment extends AppCompatActivity {
                     new InputStreamReader(is, StandardCharsets.UTF_8)
             );
 
-            String line = "";
-
+            String line="";
+            String[] arrayxd = line.split(",");
                 try {
                     reader.readLine();
                     while ( (line = reader.readLine()) != null) {
                         Log.d("MyActivity", "Line: " + line);
-                        String[] arrayxd = line.split(",");
+
                         Trip trip = new Trip();
 
                         trip.setDestination(arrayxd[0]);
@@ -60,7 +57,7 @@ public class Screen_Payment extends AppCompatActivity {
                         trip.setRemainingseats(Integer.parseInt(arrayxd[2]));
                         trip.setTimeofdeparture(arrayxd[3]);
 
-                        System.out.println(arrayxd[0] + arrayxd[1] +  arrayxd[2] +  arrayxd[3]);
+                        //System.out.println(arrayxd[0] + arrayxd[1] +  arrayxd[2] +  arrayxd[3]);
 
                         tripdetails.add(trip);
 
