@@ -4,7 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="#121212"
     tools:context=".Screen_Payment">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="205dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="226dp"
+        app:layout_constraintStart_toEndOf="@+id/txtDestination"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="226dp"
+        android:text="@string/bookTrip1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/bookTrip2"
+        android:textColor="#FDFDFD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDestination" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="66dp"
+        app:layout_constraintStart_toEndOf="@+id/txtDeparture"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <TextView
+        android:id="@+id/txtNumberOfSeats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/bookTrip3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDeparture" />
+
+    <TextView
+        android:id="@+id/noOfSeats"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="89dp"
+        android:text="@string/bookTrip4"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtNumberOfSeats"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
