@@ -37,12 +37,11 @@ public class Screen_Payment extends AppCompatActivity {
     }
 
         private void checkTrip() {
-
             InputStream is = getResources().openRawResource(R.raw.final_bus_schedule);
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(is, StandardCharsets.UTF_8)
             );
-
+            /*
             String line="";
             String[] arrayxd = line.split(",");
                 try {
@@ -67,7 +66,7 @@ public class Screen_Payment extends AppCompatActivity {
                     Log.wtf("MyActivity", "Error reading data file on line " + line, e);
                     e.printStackTrace();
                 }
-
+            */
             }
 
 }

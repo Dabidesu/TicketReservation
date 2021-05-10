@@ -16,7 +16,8 @@
         android:layout_marginLeft="69dp"
         android:layout_marginTop="226dp"
         app:layout_constraintStart_toEndOf="@+id/txtDestination"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/destination"/>
 
     <TextView
         android:id="@+id/txtDestination"
@@ -50,7 +51,8 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="66dp"
         app:layout_constraintStart_toEndOf="@+id/txtDeparture"
-        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        android:entries="@array/timeOfDepartureA"/>
 
     <TextView
         android:id="@+id/txtNumberOfSeats"
