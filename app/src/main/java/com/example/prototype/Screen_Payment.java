@@ -20,6 +20,7 @@ public class Screen_Payment extends AppCompatActivity {
 
     Spinner dest;
     Spinner dept;
+
     private List<Trip> tripdetails = new ArrayList<>();
 
     @Override
@@ -32,14 +33,14 @@ public class Screen_Payment extends AppCompatActivity {
         dest = findViewById(R.id.spinner1);
         dept = findViewById(R.id.spinner2);
 
-        ArrayAdapter<List> adapter = new ArrayAdapter<List>(this, android.R.layout.simple_spinner_dropdown_item, Collections.singletonList(tripdetails));
-        adapter.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item);
+        //ArrayAdapter<List> adapter = new ArrayAdapter<List>(this, android.R.layout.simple_spinner_dropdown_item, Collections.singletonList(tripdetails));
+        //adapter.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item);
 
     }
 
         private void checkTrip() {
 
-            InputStream is = getResources().openRawResource(R.raw.trips__051021_);
+            InputStream is = getResources().openRawResource(R.raw.final_bus_schedule);
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(is, Charset.forName("UTF-8"))
             );
@@ -52,10 +53,12 @@ public class Screen_Payment extends AppCompatActivity {
                         Log.d("MyActivity", "Line: " + line);
                         String[] arrayxd = line.split(",");
                         Trip trip = new Trip();
-                        trip.setBus_company(arrayxd[0]);
-                        trip.setDestination(arrayxd[1]);
+
+                        trip.setDestination(arrayxd[0]);
+                        trip.setBus_company(arrayxd[1]);
                         trip.setRemainingseats(Integer.parseInt(arrayxd[2]));
                         trip.setTimeofdeparture(arrayxd[3]);
+
                         tripdetails.add(trip);
 
                         Log.d("MyActivity", "Created: " + trip);

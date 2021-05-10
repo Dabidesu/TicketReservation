@@ -44,8 +44,8 @@ public class Trip {
         return "Trip{" +
                 "destination='" + destination + '\'' +
                 ", bus_company='" + bus_company + '\'' +
-                ", timeofdeparture='" + timeofdeparture + '\'' +
-                ", remainingseats=" + remainingseats +
+                ", remainingseats=" + remainingseats + '\'' +
+                ", timeofdeparture='" + timeofdeparture +
                 '}';
     }
 }
