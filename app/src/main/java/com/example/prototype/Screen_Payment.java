@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -42,7 +43,7 @@ public class Screen_Payment extends AppCompatActivity {
 
             InputStream is = getResources().openRawResource(R.raw.final_bus_schedule);
             BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(is, Charset.forName("UTF-8"))
+                    new InputStreamReader(is, StandardCharsets.UTF_8)
             );
 
             String line = "";
@@ -58,6 +59,8 @@ public class Screen_Payment extends AppCompatActivity {
                         trip.setBus_company(arrayxd[1]);
                         trip.setRemainingseats(Integer.parseInt(arrayxd[2]));
                         trip.setTimeofdeparture(arrayxd[3]);
+
+                        System.out.println(arrayxd[0] + arrayxd[1] +  arrayxd[2] +  arrayxd[3]);
 
                         tripdetails.add(trip);
 
