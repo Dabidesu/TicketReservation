@@ -28,8 +28,8 @@ public class Screen_Payment extends AppCompatActivity {
         setContentView(R.layout.activity_screen_payment);
         checkTrip();
 
-        dest = (Spinner)findViewById(R.id.spinner1);
-        dept = (Spinner)findViewById(R.id.spinner2);
+        dest = findViewById(R.id.spinner1);
+        dept = findViewById(R.id.spinner2);
 
         ArrayAdapter<List> adapter = new ArrayAdapter<List>(this, android.R.layout.simple_spinner_dropdown_item, Collections.singletonList(tripdetails));
         adapter.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item);
