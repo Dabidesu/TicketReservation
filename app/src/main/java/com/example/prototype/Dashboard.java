@@ -15,9 +15,9 @@ public class Dashboard extends AppCompatActivity {
     ImageView dashButton1;
     ImageView dashButton2;
     ImageView dashButton3;
-    //ImageView dashButton4;
+    ImageView dashButton4;
     //ImageView dashButton5;
-    //ImageView dashButton6;
+    ImageView dashButton6;
 
     final int random = new Random().nextInt(999999999) + 1;
 
@@ -44,7 +44,9 @@ public class Dashboard extends AppCompatActivity {
         }
 
 
-        //Buttons
+    //Buttons
+
+        //Book Trip
         dashButton1 = findViewById(R.id.dashButton1);
         dashButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,7 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        //Show Ticket
         dashButton2 = findViewById(R.id.dashButton2);
         dashButton2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +66,7 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        //View Trip
         dashButton3 = findViewById(R.id.dashButton3);
         dashButton3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,18 +75,20 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /*
+
+        //Check Route (WIP)
+        //Enabled for Testing
         dashButton4 = findViewById(R.id.dashButton4);
         dashButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, Dashboard.class);
+                Intent intent = new Intent(Dashboard.this, Initialize_Payment.class);
                 startActivity(intent);
             }
         });
-        */
 
         /*
+        //Edit Trip (WIP)
         dashButton5 = findViewById(R.id.dashButton5);
         dashButton5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,22 +99,24 @@ public class Dashboard extends AppCompatActivity {
         });
         */
 
-        /*
+
+        //Log-Out
         dashButton6 = findViewById(R.id.dashButton6);
         dashButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, Dashboard.class);
+                //For now, babalik lang sa Login Screen since wala pang Login/Register na module
+                Intent intent = new Intent(Dashboard.this, LoginScreen.class);
                 startActivity(intent);
             }
         });
-        */
+
 
 
     }
 
     void changeUser() {
-        //kapag may login module na
+        //Use this kapag gagawin na yung Login Module
     }
 
 
