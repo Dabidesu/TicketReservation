@@ -23,53 +23,5 @@
     <string name="bookTrip3">Remaining No. of Seats</string>
     <string name="bookTrip4">0</string>
 
-    <string-array name="destination">
-        <item>Aguinaldo Hwy- Imus</item>
-        <item>Gahak- Kawit</item>
-        <item>St. Dominic- Molino</item>
-        <item>SM- Bacoor</item>
-        <item>Arcade- Zapote</item>
-    </string-array>
-
-    <string-array name="busLine">
-        <item>Victory Liner</item>
-        <item>Five Star</item>
-        <item>Golden Dragon</item>
-        <item>AAB Bus Line</item>
-        <item>Reinalyn</item>
-    </string-array>
-
-    <string-array name="numOfSeats">
-        <item>30</item>
-        <item>45</item>
-        <item>40</item>
-        <item>25</item>
-        <item>20</item>
-    </string-array>
-
-    <string-array name="timeOfDepartureA">
-        <item>17:30:00</item>
-        <item>07:25:00</item>
-    </string-array>
-
-    <string-array name="timeOfDepartureB">
-        <item>12:00:00</item>
-        <item>05:10:00</item>
-    </string-array>
-
-    <string-array name="timeOfDepartureC">
-        <item>08:00:00</item>
-        <item>15:45:00</item>
-    </string-array>
-
-    <string-array name="timeOfDepartureD">
-        <item>13:25:00</item>
-        <item>07:25:00</item>
-    </string-array>
-
-    <string-array name="timeOfDepartureE">
-        <item>10:00:00</item>
-        <item>14:00:00</item>
-    </string-array>
 
 </resources>
