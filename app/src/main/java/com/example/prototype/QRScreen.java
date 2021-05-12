@@ -3,6 +3,7 @@ package com.example.prototype;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
@@ -22,66 +23,56 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 import java.util.UUID;
 
 public class QRScreen extends AppCompatActivity {
+
+    public static String uuid;
     String uniqueId;
-    String sText;
-    EditText input;
-    Button btnGenerate;
-    Button showRandomId;
     ImageView qr;
     TextView txtUUID;
-
-    boolean alreadyExecuted;
+    Button homeBtn;
+    String[] aaa = {Screen_Payment.statDest, Screen_Payment.statDept, Screen_Payment.statTxtView};
+    String combined;
+    boolean alreadyExecuted = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrscreen);
+        homeBtn = (Button) findViewById(R.id.btnHome);
         txtUUID = (TextView) findViewById(R.id.showUUID);
-        input = findViewById(R.id.input);
-        btnGenerate = findViewById(R.id.btnGenerate);
         qr = findViewById(R.id.output);
 
-        btnGenerate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                sText = input.getText().toString().trim();
+                combined = aaa[0] + "\n" + aaa[1] + "\n" + aaa[2];
                 MultiFormatWriter writer = new MultiFormatWriter();
-                if (!sText.isEmpty()) {
                         try {
-                            BitMatrix matrix = writer.encode(sText, BarcodeFormat.QR_CODE, 350, 350);
+                            BitMatrix matrix = writer.encode(combined, BarcodeFormat.QR_CODE, 350, 350);
                             BarcodeEncoder encoder = new BarcodeEncoder();
                             Bitmap bitmap = encoder.createBitmap(matrix);
                             qr.setImageBitmap(bitmap);
-                            InputMethodManager manager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                            manager.hideSoftInputFromWindow(input.getApplicationWindowToken(), 0);
                         } catch (WriterException e) {
                             e.printStackTrace();
                         }
-
-                        sText = uniqueId;
+                         combined = uniqueId;
                          if(!alreadyExecuted)
                          {
                              uniqueId = UUID.randomUUID().toString();
-                             int duration = Toast.LENGTH_SHORT;
-                             Toast toast = Toast.makeText(getBaseContext(), uniqueId, duration);
-                             toast.show();
+                             //int duration = Toast.LENGTH_SHORT;
+                             //Toast toast = Toast.makeText(getBaseContext(), uniqueId, duration);
+                             //toast.show();
                              alreadyExecuted = true;
+                             Screen_Payment.ticketViewed = true;
                          }
 
                     txtUUID.setText("UUID: " + uniqueId);
-                }
-                else
-                {
-                    int i = 0;
-                    Toast.makeText(QRScreen.this, "bruh at least put something in the Text Field", Toast.LENGTH_LONG).show();
-                }
+                    uuid = uniqueId;
 
 
-            }
-        });
-
-
-
+                homeBtn = findViewById(R.id.btnHome);
+                homeBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(QRScreen.this, Dashboard.class);
+                        startActivity(intent);
+                    }
+                });
 
 
 

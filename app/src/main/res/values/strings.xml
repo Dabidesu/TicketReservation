@@ -22,6 +22,7 @@
     <string name="bookTrip2">Time of Departure</string>
     <string name="bookTrip3">Remaining No. of Seats</string>
     <string name="bookTrip4">0</string>
-    <string name="label_book">Proceed</string>
+    <string name="label_book">Next</string>
+    <string name="home">Done</string>
 
 </resources>

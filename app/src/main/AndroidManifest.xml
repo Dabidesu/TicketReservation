@@ -14,8 +14,7 @@
         <activity android:name=".Initialize_Payment" />
         <activity android:name=".Register" />
         <activity android:name=".Screen_Trip" />
-        <activity android:name=".Screen_Ticket" />
-        <activity android:name=".Screen_Receipt" />
+        <activity android:name=".Screen_Edit" />
         <activity android:name=".Screen_Payment" />
         <activity android:name=".Dashboard" />
         <activity android:name=".LoginScreen" />

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Screen_Ticket extends AppCompatActivity {
+public class Screen_Edit extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_ticket);
+        //setContentView(R.layout.activity_screen_route);
     }
 }

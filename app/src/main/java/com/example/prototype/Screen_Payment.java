@@ -2,14 +2,13 @@ package com.example.prototype;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
-import android.os.Environment;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -18,15 +17,9 @@ import android.widget.Toast;
 
 //import com.opencsv.CSVReader;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /*
 import org.json.JSONStringer;
@@ -47,18 +40,25 @@ import java.time.format.DateTimeFormatter;
 
 public class Screen_Payment extends AppCompatActivity {
 
-
-
     TextView txtView;
     Spinner dest;
     Spinner dept;
     RadioGroup rg;
     RadioButton rb;
+    Button nextPayment;
+    Random rand = new Random();
 
     ArrayList<String> arrayList_dest;
+    ArrayList<String> list;
     ArrayAdapter<String> arrayAdapter_dest;
 
-    // private List<Trip> tripdetails = new ArrayList<>();
+    public static String statTxtView;
+    public static String statDest;
+    public static String statDept;
+    public static String statRg;
+    public static String depBay;
+    public static boolean ticketYes = false;
+    public static boolean ticketViewed = false;
 
     private String destAtimex = "07:25:00";
     private String destAtimey = "17:30:00";
@@ -76,17 +76,25 @@ public class Screen_Payment extends AppCompatActivity {
     private String destEtimey = "18:00:00";
 
     static int numOfSeatsA = 30;
-
     static int numOfSeatsB = 45;
     static int numOfSeatsC = 40;
     static int numOfSeatsD = 25;
     static int numOfSeatsE = 20;
+    int randomNum;
+    static int randomInt;
+
+    String depBayA = "DB1";
+    String depBayB = "DB2";
+    String depBayC = "DB3";
+    String depBayD = "DB4";
+    String depBayE = "DB5";
 
     Integer numSeatsA = new Integer(numOfSeatsA);
     Integer numSeatsB = new Integer(numOfSeatsB);
     Integer numSeatsC = new Integer(numOfSeatsC);
     Integer numSeatsD = new Integer(numOfSeatsD);
     Integer numSeatsE = new Integer(numOfSeatsE);
+
 
     ArrayList<String> arrayList_AguinaldoHwyImus,arrayList_GahakKawit,arrayList_SMBacoor,arrayList_ArcadeZapote, arrayList_StDominicMolino;
     ArrayAdapter<String> arrayAdapter_dept;
@@ -95,15 +103,11 @@ public class Screen_Payment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_payment);
 
-        //radioButtonA = (RadioButton) findViewById(R.id.radioGCash);
-        //radioButtonB = (RadioButton) findViewById(R.id.radioPaymaya);
         txtView = (TextView) findViewById(R.id.noOfSeats);
         dest = (Spinner) findViewById(R.id.spinner1);
         dept = (Spinner) findViewById(R.id.spinner2);
+        rg= (RadioGroup)  findViewById(R.id.radioGroup1);
 
-
-        //ArrayAdapter<List> adapter = new ArrayAdapter<List>(this, android.R.layout.simple_spinner_dropdown_item, Collections.singletonList(tripdetails));
-        //adapter.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item);
 
         arrayList_dest = new ArrayList<>();
         arrayList_dest.add("Aguinaldo Hwy, Imus");
@@ -119,16 +123,13 @@ public class Screen_Payment extends AppCompatActivity {
         arrayList_AguinaldoHwyImus.add(destAtimex);
         arrayList_AguinaldoHwyImus.add(destAtimey);
 
-
         arrayList_GahakKawit = new ArrayList<>();
         arrayList_GahakKawit.add(destBtimex);
         arrayList_GahakKawit.add(destBtimey);
 
-
         arrayList_SMBacoor = new ArrayList<>();
         arrayList_SMBacoor.add(destCtimex);
         arrayList_SMBacoor.add(destCtimey);
-
 
         arrayList_ArcadeZapote = new ArrayList<>();
         arrayList_ArcadeZapote.add(destDtimex);
@@ -138,8 +139,6 @@ public class Screen_Payment extends AppCompatActivity {
         arrayList_StDominicMolino.add(destEtimex);
         arrayList_StDominicMolino.add(destEtimey);
 
-        rg= (RadioGroup)  findViewById(R.id.radioGroup1);
-
 
         dest.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -148,29 +147,43 @@ public class Screen_Payment extends AppCompatActivity {
                 if (position == 0) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_AguinaldoHwyImus);
                     txtView.setText(numSeatsA.toString());
-
+                    depBay = depBayA;
+                    randomNum = rand.nextInt(30);
+                    randomInt = randomNum;
                 }
 
                 if (position == 1) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_GahakKawit);
                     txtView.setText(numSeatsB.toString());
+                    depBay = depBayB;
+                    randomNum = rand.nextInt(45);
+                    randomInt = randomNum;
                 }
 
                 if (position == 2) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_SMBacoor);
                     txtView.setText(numSeatsC.toString());
+                    depBay = depBayC;
+                    randomNum = rand.nextInt(40);
+                    randomInt = randomNum;
                 }
 
                 if (position == 3) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_ArcadeZapote);
                     txtView.setText(numSeatsD.toString());
+                    depBay = depBayD;
+                    randomNum = rand.nextInt(25);
+                    randomInt = randomNum;
                 }
 
                 if (position == 4) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_StDominicMolino);
                     txtView.setText(numSeatsE.toString());
-                }
+                    depBay = depBayE;
+                    randomNum = rand.nextInt(20);
+                    randomInt = randomNum;
 
+                }
                 dept.setAdapter(arrayAdapter_dept);
             }
 
@@ -181,26 +194,34 @@ public class Screen_Payment extends AppCompatActivity {
         });
 
 
-    /*
-        CSVReader reader = new CSVReader(new FileReader("data.csv"), ',' , '"' , 1)
-        InputStream is = getResources().openRawResource(R.raw.final_bus_schedule);
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(is, StandardCharsets.UTF_8)
-        );
-    */
-
-
      }
 
      public void rbclick(View view)
     {
-        int radioid = rg.getCheckedRadioButtonId();
-        rb = (RadioButton) findViewById(radioid);
+        int radioId = rg.getCheckedRadioButtonId();
+        rb = (RadioButton) findViewById(radioId);
     }
 
 
     public void nextButton(View view){
 
+        statTxtView = txtView.getText().toString();
+        statDest = dest.getSelectedItem().toString();
+        statDept = dept.getSelectedItem().toString();
+
+
+        nextPayment = findViewById(R.id.nextPayment);
+        nextPayment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent intent = new Intent(Screen_Payment.this, Initialize_Payment.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     /*

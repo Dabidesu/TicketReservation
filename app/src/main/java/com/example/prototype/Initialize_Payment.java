@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
@@ -17,6 +18,7 @@ public class Initialize_Payment extends AppCompatActivity {
 
     CardForm cardForm;
     Button book;
+    Button nextReceipt;
     AlertDialog.Builder alertBuilder;
 
 
@@ -40,7 +42,7 @@ public class Initialize_Payment extends AppCompatActivity {
             public void onClick(View v) {
                 if(cardForm.isValid()) {
                     alertBuilder = new AlertDialog.Builder(Initialize_Payment.this);
-                    alertBuilder.setTitle("Confirm before purchase");
+                    alertBuilder.setTitle("Confirmation Message");
                     alertBuilder.setMessage("Card number: " + cardForm.getCardNumber() + "\n" +
                             "Card expiry date: " + cardForm.getExpirationDateEditText().getText().toString() + "\n" +
                             "Card CVV: " + cardForm.getCvv() + "\n" +
@@ -51,7 +53,16 @@ public class Initialize_Payment extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.dismiss();
-                            Toast.makeText(Initialize_Payment.this, "Initializing payment...", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Initialize_Payment.this, "Press again to confirm.", Toast.LENGTH_SHORT).show();
+                            nextReceipt = findViewById(R.id.btnBook);
+                            nextReceipt.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Screen_Payment.ticketYes = true;
+                                    Intent intent = new Intent(Initialize_Payment.this, Dashboard.class);
+                                    startActivity(intent);
+                                }
+                            });
                         }
                     });
 

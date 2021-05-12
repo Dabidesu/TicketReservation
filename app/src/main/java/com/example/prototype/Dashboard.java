@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Random;
 
 public class Dashboard extends AppCompatActivity {
@@ -44,15 +46,23 @@ public class Dashboard extends AppCompatActivity {
         }
 
 
-    //Buttons
+    //Navigation Buttons
 
         //Book Trip
         dashButton1 = findViewById(R.id.dashButton1);
         dashButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, Screen_Payment.class);
-                startActivity(intent);
+                if(Screen_Payment.ticketYes != true)
+                {
+                    Intent intent = new Intent(Dashboard.this, Screen_Payment.class);
+                    startActivity(intent);
+                }
+                else
+                {
+                    Toast.makeText(Dashboard.this, "Only one ticket per device is allowed.", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -61,8 +71,15 @@ public class Dashboard extends AppCompatActivity {
         dashButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, Screen_Ticket.class);
-                startActivity(intent);
+                if(Screen_Payment.ticketYes != true)
+                {
+                    Toast.makeText(Dashboard.this, "Please purchase a ticket first.", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Intent intent = new Intent(Dashboard.this, QRScreen.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -71,33 +88,48 @@ public class Dashboard extends AppCompatActivity {
         dashButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, Screen_Trip.class);
-                startActivity(intent);
+                if(Screen_Payment.ticketYes != true)
+                {
+                    Toast.makeText(Dashboard.this, "Please purchase a ticket first.", Toast.LENGTH_SHORT).show();
+
+                }
+                else
+                {
+                    if (Screen_Payment.ticketViewed != true)
+                        Toast.makeText(Dashboard.this, "View Ticket first.", Toast.LENGTH_SHORT).show();
+                    else
+                    {
+                        Intent intent = new Intent(Dashboard.this, Screen_Trip.class);
+                        startActivity(intent);
+                    }
+                }
+
             }
         });
 
-        //Check Route (WIP)
-        //Enabled for Testing
-        dashButton4 = findViewById(R.id.dashButton4);
-        dashButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, Initialize_Payment.class);
-                startActivity(intent);
-            }
-        });
+                    //Check Route (WIP)
+                    /*
+                    dashButton4 = findViewById(R.id.dashButton4);
+                    dashButton4.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(Dashboard.this, Screen_Route.class);
+                            startActivity(intent);
+                        }
+                    });
+                    */
 
-        //Edit Trip (WIP)
-        //Enabled for Testing
-        dashButton5 = findViewById(R.id.dashButton5);
-        dashButton5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, QRScreen.class);
-                startActivity(intent);
-            }
-        });
-
+                    //Edit Trip (WIP)
+                    /*
+                    dashButton5 = findViewById(R.id.dashButton5);
+                    dashButton5.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(Dashboard.this, Screen_Edit.class);
+                            startActivity(intent);
+                        }
+                    });
+                    */
 
 
         //Log-Out

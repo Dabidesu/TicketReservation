@@ -86,8 +86,9 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView16"
-            android:layout_width="201dp"
+            android:gravity="center"
+            android:id="@+id/tv5"
+            android:layout_width="350dp"
             android:layout_height="35dp"
             android:layout_marginStart="109dp"
             android:layout_marginLeft="109dp"
@@ -101,7 +102,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:gravity="center"
+            android:id="@+id/tv4"
             android:layout_width="201dp"
             android:layout_height="35dp"
             android:layout_marginStart="109dp"
@@ -116,7 +118,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:gravity="center"
+            android:id="@+id/tv3"
             android:layout_width="201dp"
             android:layout_height="35dp"
             android:layout_marginStart="109dp"
@@ -131,7 +134,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:gravity="center"
+            android:id="@+id/tv2"
             android:layout_width="201dp"
             android:layout_height="35dp"
             android:layout_marginStart="109dp"
@@ -146,7 +150,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/tripbutton1"
+            android:id="@+id/doneBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="158dp"
@@ -259,7 +263,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv1"
+            android:gravity="center"
             android:layout_width="201dp"
             android:layout_height="35dp"
             android:layout_marginStart="109dp"
