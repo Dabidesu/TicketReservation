@@ -11,11 +11,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.opencsv.CSVReader;
+//import com.opencsv.CSVReader;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -51,8 +52,9 @@ public class Screen_Payment extends AppCompatActivity {
     TextView txtView;
     Spinner dest;
     Spinner dept;
-    RadioButton radioButtonA;
-    RadioButton radioButtonB;
+    RadioGroup rg;
+    RadioButton rb;
+
     ArrayList<String> arrayList_dest;
     ArrayAdapter<String> arrayAdapter_dest;
 
@@ -93,11 +95,12 @@ public class Screen_Payment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_payment);
 
-        radioButtonA = (RadioButton) findViewById(R.id.radioGCash);
-        radioButtonB = (RadioButton) findViewById(R.id.radioPaymaya);
+        //radioButtonA = (RadioButton) findViewById(R.id.radioGCash);
+        //radioButtonB = (RadioButton) findViewById(R.id.radioPaymaya);
         txtView = (TextView) findViewById(R.id.noOfSeats);
         dest = (Spinner) findViewById(R.id.spinner1);
         dept = (Spinner) findViewById(R.id.spinner2);
+
 
         //ArrayAdapter<List> adapter = new ArrayAdapter<List>(this, android.R.layout.simple_spinner_dropdown_item, Collections.singletonList(tripdetails));
         //adapter.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item);
@@ -134,6 +137,8 @@ public class Screen_Payment extends AppCompatActivity {
         arrayList_StDominicMolino = new ArrayList<>();
         arrayList_StDominicMolino.add(destEtimex);
         arrayList_StDominicMolino.add(destEtimey);
+
+        rg= (RadioGroup)  findViewById(R.id.radioGroup1);
 
 
         dest.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -187,11 +192,13 @@ public class Screen_Payment extends AppCompatActivity {
 
      }
 
-
-    public void onRadioButtonClick(View view)
+     public void rbclick(View view)
     {
-
+        int radioid = rg.getCheckedRadioButtonId();
+        rb = (RadioButton) findViewById(radioid);
     }
+
+
     public void nextButton(View view){
 
     }

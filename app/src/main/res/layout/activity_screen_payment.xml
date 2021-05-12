@@ -68,20 +68,18 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
         android:id="@+id/frameLayout2"
         android:layout_width="403dp"
         android:layout_height="518dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="107dp"
         android:layout_marginBottom="106dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/txtDeparture"
@@ -182,68 +180,70 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="56dp"
-            android:layout_height="62dp"
-            android:layout_marginStart="109dp"
-            android:layout_marginLeft="109dp"
-            android:layout_marginTop="370dp"
-            android:contentDescription="@string/desc"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo_gcash" />
-
-        <RadioButton
-            android:id="@+id/radioGCash"
-            android:layout_width="53dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="370dp"
-            android:layout_marginBottom="102dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <RadioButton
-            android:id="@+id/radioPaymaya"
-            android:layout_width="53dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="226dp"
-            android:layout_marginLeft="226dp"
-            android:layout_marginTop="370dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="81dp"
-            android:layout_height="72dp"
-            android:layout_marginStart="288dp"
-            android:layout_marginLeft="288dp"
-            android:layout_marginTop="370dp"
-            android:contentDescription="@string/desc"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo_paymaya" />
-
         <Button
             android:id="@+id/nextPayment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="157dp"
-            android:layout_marginLeft="157dp"
-            android:layout_marginTop="453dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginLeft="152dp"
+            android:layout_marginTop="468dp"
             android:onClick="nextButton"
             android:text="Next"
             app:backgroundTint="@color/cardview_dark_background"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="55dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="194dp"
+            android:layout_marginLeft="194dp"
+            android:layout_marginTop="331dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="rbclick"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="48dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="465dp" />
 
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:onClick="rbclick"
+                tools:layout_conversion_absoluteHeight="47dp"
+                tools:layout_conversion_absoluteWidth="48dp" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="57dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="255dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="323dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_gcash" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="252dp"
+            android:layout_marginLeft="252dp"
+            android:layout_marginTop="386dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_paymaya" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
