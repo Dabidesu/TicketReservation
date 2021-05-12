@@ -3,14 +3,15 @@
     package="com.example.prototype">
 
     <application
-        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Prototype">
-        <activity android:name=".Initialize_Payment"></activity>
+        <activity android:name=".QRScreen"></activity>
+        <activity android:name=".Initialize_Payment" />
         <activity android:name=".Register" />
         <activity android:name=".Screen_Trip" />
         <activity android:name=".Screen_Ticket" />

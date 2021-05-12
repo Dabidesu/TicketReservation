@@ -16,7 +16,7 @@ public class Dashboard extends AppCompatActivity {
     ImageView dashButton2;
     ImageView dashButton3;
     ImageView dashButton4;
-    //ImageView dashButton5;
+    ImageView dashButton5;
     ImageView dashButton6;
 
     final int random = new Random().nextInt(999999999) + 1;
@@ -87,17 +87,17 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-        /*
         //Edit Trip (WIP)
+        //Enabled for Testing
         dashButton5 = findViewById(R.id.dashButton5);
         dashButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, Dashboard.class);
+                Intent intent = new Intent(Dashboard.this, QRScreen.class);
                 startActivity(intent);
             }
         });
-        */
+
 
 
         //Log-Out
