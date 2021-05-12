@@ -68,6 +68,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:id="@+id/frameLayout2"
         android:layout_width="403dp"
         android:layout_height="518dp"
@@ -80,15 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RadioButton
-            android:id="@+id/radioPaymaya2"
-            android:layout_width="53dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="226dp"
-            android:layout_marginLeft="226dp"
-            android:layout_marginTop="370dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/txtDeparture"
@@ -189,6 +182,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="56dp"
@@ -202,7 +196,7 @@
             app:srcCompat="@drawable/logo_gcash" />
 
         <RadioButton
-            android:id="@+id/radioPaymaya"
+            android:id="@+id/radioGCash"
             android:layout_width="53dp"
             android:layout_height="46dp"
             android:layout_marginStart="45dp"
@@ -210,6 +204,16 @@
             android:layout_marginTop="370dp"
             android:layout_marginBottom="102dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioPaymaya"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="226dp"
+            android:layout_marginLeft="226dp"
+            android:layout_marginTop="370dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -237,6 +241,10 @@
             app:backgroundTint="@color/cardview_dark_background"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

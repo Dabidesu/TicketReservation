@@ -4,11 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.opencsv.CSVReader;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,12 +48,16 @@ public class Screen_Payment extends AppCompatActivity {
 
 
 
-
+    TextView txtView;
     Spinner dest;
     Spinner dept;
+    RadioButton radioButtonA;
+    RadioButton radioButtonB;
     ArrayList<String> arrayList_dest;
     ArrayAdapter<String> arrayAdapter_dest;
+
     // private List<Trip> tripdetails = new ArrayList<>();
+
     private String destAtimex = "07:25:00";
     private String destAtimey = "17:30:00";
 
@@ -55,11 +74,17 @@ public class Screen_Payment extends AppCompatActivity {
     private String destEtimey = "18:00:00";
 
     static int numOfSeatsA = 30;
+
     static int numOfSeatsB = 45;
     static int numOfSeatsC = 40;
     static int numOfSeatsD = 25;
     static int numOfSeatsE = 20;
 
+    Integer numSeatsA = new Integer(numOfSeatsA);
+    Integer numSeatsB = new Integer(numOfSeatsB);
+    Integer numSeatsC = new Integer(numOfSeatsC);
+    Integer numSeatsD = new Integer(numOfSeatsD);
+    Integer numSeatsE = new Integer(numOfSeatsE);
 
     ArrayList<String> arrayList_AguinaldoHwyImus,arrayList_GahakKawit,arrayList_SMBacoor,arrayList_ArcadeZapote, arrayList_StDominicMolino;
     ArrayAdapter<String> arrayAdapter_dept;
@@ -68,6 +93,9 @@ public class Screen_Payment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_payment);
 
+        radioButtonA = (RadioButton) findViewById(R.id.radioGCash);
+        radioButtonB = (RadioButton) findViewById(R.id.radioPaymaya);
+        txtView = (TextView) findViewById(R.id.noOfSeats);
         dest = (Spinner) findViewById(R.id.spinner1);
         dept = (Spinner) findViewById(R.id.spinner2);
 
@@ -103,7 +131,6 @@ public class Screen_Payment extends AppCompatActivity {
         arrayList_ArcadeZapote.add(destDtimex);
         arrayList_ArcadeZapote.add(destDtimey);
 
-
         arrayList_StDominicMolino = new ArrayList<>();
         arrayList_StDominicMolino.add(destEtimex);
         arrayList_StDominicMolino.add(destEtimey);
@@ -115,22 +142,28 @@ public class Screen_Payment extends AppCompatActivity {
 
                 if (position == 0) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_AguinaldoHwyImus);
+                    txtView.setText(numSeatsA.toString());
+
                 }
 
                 if (position == 1) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_GahakKawit);
+                    txtView.setText(numSeatsB.toString());
                 }
 
                 if (position == 2) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_SMBacoor);
+                    txtView.setText(numSeatsC.toString());
                 }
 
                 if (position == 3) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_ArcadeZapote);
+                    txtView.setText(numSeatsD.toString());
                 }
 
                 if (position == 4) {
                     arrayAdapter_dept = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_StDominicMolino);
+                    txtView.setText(numSeatsE.toString());
                 }
 
                 dept.setAdapter(arrayAdapter_dept);
@@ -143,12 +176,26 @@ public class Screen_Payment extends AppCompatActivity {
         });
 
 
+    /*
+        CSVReader reader = new CSVReader(new FileReader("data.csv"), ',' , '"' , 1)
+        InputStream is = getResources().openRawResource(R.raw.final_bus_schedule);
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(is, StandardCharsets.UTF_8)
+        );
+    */
+
+
      }
 
 
+    public void onRadioButtonClick(View view)
+    {
+
+    }
     public void nextButton(View view){
 
     }
+
     /*
     private void checkTrip() {
         CSVReader reader = new CSVReader(new FileReader("data.csv"), ',' , '"' , 1)
